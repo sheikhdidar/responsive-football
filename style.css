@@ -16,15 +16,14 @@ main{
 .container{ 
     margin-bottom: 70px;
     width:1050px;
-   
+    margin-top: 60px;
     
 }
     
 .top-banner{
     background-color: #2D25A0;
-    padding: 139px;
-    transition:background-image 1s ;
-    
+    padding: 150px 160px;
+    transition:background-image 1s;   
     
     
 }
@@ -44,9 +43,8 @@ main{
 }
 
 .banners{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
+    display: flex;
+    align-items: center;
     
     
 }
@@ -140,7 +138,11 @@ main{
     display: inline-block;
     margin-top:40px;
 }
+
+
 /************** font styles ****************/
+
+
 .logo img{
     width: 483.87px;
     height: 110px;
@@ -159,13 +161,4 @@ main{
     background-color: #e2e3e5;
     padding:7px;
     border-radius: 85px;
-}
-@media only screen and (max-width:688px){
-    .container {
-        width:100%;
-
-    }
-    .banners{
-        grid-template-columns: auto;
-    }
 }
