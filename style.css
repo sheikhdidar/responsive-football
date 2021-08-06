@@ -1,16 +1,23 @@
 body{
     font-family: 'Hahmlet', serif;
     margin:0;
+    padding: 0;
 
 }
 main{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
 }
-.container{
+.container{ 
+    margin-bottom: 70px;
+    
+}
+.top-banner{
     background-color: #2D25A0;
     padding: 139px;
-    margin-bottom: 70px;
+    width:1200px;
     
 }
 .banners{
@@ -31,9 +38,86 @@ main{
     font-size:16px;
     color:#FFFFFF;
     padding:10px 25px;
+
 }
 
 .banner img{
     width:556px;
     height:438px;
+}
+.top-players{
+    background-color: #FFFFFF;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 27px;
+
+}
+
+.player{
+    box-shadow: 0px 0px 40px rgb(209, 202, 202, 0.7);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:10px;
+    border-radius: 6px;
+}
+.player img{
+    width:300px;
+    height: 256px;
+    
+}
+.plyer-name{
+    font-size: 20px ;
+}
+.player-info{
+    font-size: 16px;
+}
+.highlights{
+    display: flex;
+    align-items: center;
+
+}
+.highlights-title{
+    margin-right: 70px;
+}
+.highlights-title h1{
+    color:#0A0826;
+    font-size: 50px;
+    font-weight: 700;
+
+}
+.highlights-banner img{
+    width: 567px;
+    height: 427px;
+}
+.watch-button{
+    text-decoration: none;
+    background-color: #E02C6D;
+    font-size:16px;
+    color:#FFFFFF;
+    padding:10px 25px;
+    display: inline-block;
+    margin-top:40px;
+}
+.logo img{
+    width: 483.87px;
+    height: 110px;
+}
+.football-font{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fonts{
+    Width:170px;
+    Height:32px;
+}
+.font{
+    margin-right: 10px;
+    /* color:white; */
+    background-color: #e2e3e5;
+    padding:7px;
+    border-radius: 85px;
 }
