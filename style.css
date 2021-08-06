@@ -10,22 +10,50 @@ main{
     flex-direction: column;
     
 }
+
+/******** Top banner styles  *********/
+
 .container{ 
     margin-bottom: 70px;
+    width:1050px;
+   
     
 }
+    
 .top-banner{
     background-color: #2D25A0;
     padding: 139px;
-    width:1200px;
+    transition:background-image 1s ;
+    
+    
     
 }
+/*********** hover effect ***********/
+.top-banner:hover{
+    background-image: linear-gradient(to right,#87ceeb ,blue);
+    
+    
+}
+.banner:hover{
+    transform:scale(1.1) rotate(30deg);
+}
+
+
+.banner{
+    transition: transform 1s ease-in-out;
+}
+
 .banners{
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    
+    
 }
 .banner-title{
+    
     margin-right:102px;
+    
 }
 .banner-title h1{
     font-size: 50px;
@@ -38,13 +66,21 @@ main{
     font-size:16px;
     color:#FFFFFF;
     padding:10px 25px;
-
+    border-radius:10px;
+    transition: background-color 1s ease-in-out;
+}
+/*************** link button hover effect ***********/
+.link-button:hover{
+    background-color: orange;
 }
 
 .banner img{
     width:556px;
     height:438px;
 }
+
+/************ Top players styles ***********/
+
 .top-players{
     background-color: #FFFFFF;
 }
@@ -74,9 +110,12 @@ main{
 .player-info{
     font-size: 16px;
 }
+
+/*************** Highlights style ************/
+
 .highlights{
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
 }
 .highlights-title{
@@ -101,6 +140,7 @@ main{
     display: inline-block;
     margin-top:40px;
 }
+/************** font styles ****************/
 .logo img{
     width: 483.87px;
     height: 110px;
@@ -116,8 +156,16 @@ main{
 }
 .font{
     margin-right: 10px;
-    /* color:white; */
     background-color: #e2e3e5;
     padding:7px;
     border-radius: 85px;
+}
+@media only screen and (max-width:688px){
+    .container {
+        width:100%;
+
+    }
+    .banners{
+        grid-template-columns: auto;
+    }
 }
