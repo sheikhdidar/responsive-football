@@ -1,0 +1,39 @@
+body{
+    font-family: 'Hahmlet', serif;
+    margin:0;
+
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    background-color: #2D25A0;
+    padding: 139px;
+    margin-bottom: 70px;
+    
+}
+.banners{
+    display: flex;
+    align-items: center;
+}
+.banner-title{
+    margin-right:102px;
+}
+.banner-title h1{
+    font-size: 50px;
+    font-weight: 700;
+    color:#FFFFFF;
+}
+.link-button{
+    text-decoration: none;
+    background-color: #E02C6D;
+    font-size:16px;
+    color:#FFFFFF;
+    padding:10px 25px;
+}
+
+.banner img{
+    width:556px;
+    height:438px;
+}
